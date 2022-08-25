@@ -1,0 +1,62 @@
+/* Custom Properties */
+
+:root {
+    --color-light: hsl(0, 0%, 100%);
+    --color-regular: hsl(212, 45%, 89%);
+    --color-medium: hsl(220, 15%, 55%);
+    --color-dark: hsl(218, 44%, 22%);
+}
+
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-regular);
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.container {
+    width: calc(min(375px, 100%) - 2rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+main {
+    background-color: var(--color-light);
+    width: 100%;
+    padding: 1rem;
+    margin-inline: auto;
+    border-radius: 20px;
+}
+
+.text {
+    margin: 1.5rem 1rem;
+}
+
+.text > h1 {
+    color: var(--color-dark);
+    font-size: 1.5rem;
+}
+
+.text > p {
+    color: var(--color-medium);
+}
+
+footer { 
+    font-size: 12px; 
+    color: hsl(228, 45%, 44%);
+    margin-top: 1rem;
+}
