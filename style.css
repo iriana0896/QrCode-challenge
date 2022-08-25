@@ -26,12 +26,13 @@ img {
 }
 
 .container {
-    width: calc(min(375px, 100%) - 2rem);
+    width: min(375px, 100%);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    margin: 2rem;
 }
 
 main {
